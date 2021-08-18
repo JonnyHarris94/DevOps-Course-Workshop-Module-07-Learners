@@ -28,7 +28,7 @@ jobs:
     
     - name: Discord Notification
       env: 
-        DISCORD_WEBHOOK: ${{ secrets.https://discord.com/api/webhooks/877557701520023642/6-HoqIuCcs8XEy43zRtWsc1qZUfqhgIX-7KdPLOhTQMR6Dv1Gdnzaswg0lE_n2AQN39T}}
+        DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK}}
       uses: Ilshidur/action-discord@master
       with:
         args: 'The build {{ EVENT_PAYLOAD.repository.full_name }} has been tested.'
